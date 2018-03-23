@@ -258,7 +258,9 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Assets\HTML\assets\clients-img.jpg" />
     <Content Include="Assets\HTML\assets\cliff tux 2.jpg" />
+    <Content Include="Assets\HTML\assets\CLIFFAWESOME-ADJUSTED1.png" />
     <Content Include="Assets\HTML\assets\google.png" />
+    <Content Include="Assets\HTML\assets\imagebloglayout.png" />
     <Content Include="Assets\HTML\assets\logo.png" />
     <Content Include="Assets\HTML\assets\paypal.png" />
     <Content Include="Assets\HTML\assets\post1.jpg" />
@@ -270,7 +272,7 @@
     <Content Include="Assets\HTML\assets\team3.jpg" />
     <Content Include="Assets\HTML\assets\twitter.png" />
     <Content Include="Assets\HTML\assets\visa.png" />
-    <Content Include="Assets\HTML\assets\welcome-img.jpg" />
+    <Content Include="Assets\HTML\assets\welcome-img111.jpg" />
     <Content Include="Assets\HTML\assets\work1-big.jpg" />
     <Content Include="Assets\HTML\assets\work2-big.jpg" />
     <Content Include="Assets\HTML\assets\work3-big.jpg" />
