@@ -296,6 +296,7 @@
     <Content Include="Assets\HTML\img\navbar-bg.png" />
     <Content Include="Assets\HTML\img\quotation.png" />
     <Content Include="Assets\HTML\img\scroll-arrow.png" />
+    <Content Include="Assets\HTML\index.html" />
     <Content Include="private.config" />
     <Content Include="Views\Email\SendEmail.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />

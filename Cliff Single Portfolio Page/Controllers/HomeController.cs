@@ -16,12 +16,12 @@ namespace Cliff_Single_Portfolio_Page.Controllers
             return View();
         }
 
-        //GET: Email
-        public ActionResult Contact()
-        {
-            Email model = new Email();
-            return View(model);
-        }
+        ////GET: Email
+        //public ActionResult Contact()
+        //{
+        //    Email model = new Email();
+        //    return View(model);
+        //}
 
 
         //POST: Email
@@ -36,7 +36,7 @@ namespace Cliff_Single_Portfolio_Page.Controllers
                 //Email vis = new Email();
 
                 
-                msg.Body = model.FromName + Environment.NewLine + model.Body + Environment.NewLine + "Contact's email " + model.FromEmail;
+                msg.Body = model.FromName + ", " + Environment.NewLine + model.Body + Environment.NewLine + Environment.NewLine + " Contact's email: " + model.FromEmail;
 
 
 
@@ -49,7 +49,15 @@ namespace Cliff_Single_Portfolio_Page.Controllers
             {
                 await Task.FromResult(0);
             }
-            return RedirectToAction("Index", "Home");
+
+
+            Response.Write("<script type='text/javascript'>");
+            Response.Write("alert('Email sent successfully.');");
+            Response.Write("</script>");
+
+
+
+            return View("Index");
         }
 
 

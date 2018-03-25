@@ -426,83 +426,88 @@
 					<h1 class="special-heading dark-special">Drop me a line</h1>
 					<p class="section-description">Feel free to send me an email if you are interested in discussing coding and employment opportunities. </p>
 					<div class="row contact-informations">
+
+						@using (Html.BeginForm("Contact", "Home"))
+						{
+							@Html.AntiForgeryToken()
+							@Html.ValidationSummary("", new { @class = "text-danger" })
+							@*@Html.Hidden(Model.Subject = "Portfolio Contact Email")*@
+							<div id="result"></div>
+
+							<form id="contact_form" class="contact-form" action="contact.php" method="post">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											@Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+
+											@Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+											@Html.ValidationMessageFor(m => m.FromName)
+											@*<input type="text" class="form-control input-lg" id="nameinput" placeholder="Name" name="FromName">*@
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											@Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+
+											@Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", placeholder = "example@email.com" })
+											@Html.ValidationMessageFor(m => m.FromEmail)
+											@*<input type="email" class="form-control input-lg" id="emailinput" placeholder="Email" name="VisEmail">*@
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									@Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+
+									@*@Html.TextBoxFor(m => m.Body, new { @class = "form-control",  })*@
+									<textarea class="form-control" rows="10" name="Body" placeholder="Message"></textarea>
+									@Html.ValidationMessageFor(m => m.Body)
+									@*<textarea class="form-control" rows="10" name="Body" placeholder="Message"></textarea>*@
+								</div>
+								<div class="form-group">
+
+									@*Do I add confirm statement for input of 7??? generate random numbers between 1-9  add if input equals sum then show submit button*@
+									@*<input type="text" class="form-control input-lg" id="humaninput" placeholder="5 + 2 =" name="human">*@
+								</div>
+								<div class="form-group">
+									@*@if ()*@
+									<input type="submit" class="btn btn-outline-white btn-big" value="Send Email">
+								</div>
+							</form>
+							
+						}
+
+
+
 						@*<div class="col-sm-4">
 							<div class="contact-info clearfix">
 								<i class="fa fa-map-marker"></i>*@
-								<!--<span>Freedom Street, 245<br>Amsterdam</span>-->
-							@*</div>
-						</div>*@
-						<div class="col-sm-4">
-							<div class="contact-info clearfix">
-								<i class="fa fa-envelope">
-									
-								</i>
-								<h1>@Html.ActionLink("Contact Me", "Contact") </h1>
-								<!--<span>contact@mysite.com</span>-->
-							</div>
-						</div>
-						@*<div class="col-sm-4">
-							<div class="contact-info clearfix">
-								<i class="fa fa-phone"></i>*@
-								<!--<span>235 214 2326</span>-->
-							@*</div>
-						</div>*@
+						<!--<span>Freedom Street, 245<br>Amsterdam</span>-->
+						@*</div>
+							</div>*@
+
+						@*<div class="contact-info clearfix">*@
+
+
+						@*<i class="fa fa-envelope"
+
+							</i>*@
+						<a class="btn btn-outline btn-darkblue more-blog" @Html.ActionLink("CONTACT ME", "Contact")</a>
+
+
+
+						<!--<span>contact@mysite.com</span>-->
 					</div>
 				</div>
+				@*<div class="col-sm-4">
+					<div class="contact-info clearfix">
+						<i class="fa fa-phone"></i>*@
+				<!--<span>235 214 2326</span>-->
+				@*</div>
+					</div>*@
 			</div>
-			<div class="row">
+		</div>
+		</div>
 
-				<div class="col-md-8 col-md-offset-2">
-
-					@using (Html.BeginForm())
-					{
-						@Html.AntiForgeryToken()
-						@Html.ValidationSummary("", new { @class = "text-danger" })
-
-						<div id="result"></div>
-
-						<form id="contact_form" class="contact-form" action="contact.php" method="post">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										@Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
-
-										@Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
-										@Html.ValidationMessageFor(m => m.FromName)
-										@*<input type="text" class="form-control input-lg" id="nameinput" placeholder="Name" name="FromName">*@
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										@Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
-
-										@Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", placeholder ="example@email.com" })
-										@Html.ValidationMessageFor(m => m.FromEmail)
-										@*<input type="email" class="form-control input-lg" id="emailinput" placeholder="Email" name="VisEmail">*@
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								@Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
-
-								@Html.TextBoxFor(m => m.Body, new { @class = "form-control" })
-								@Html.ValidationMessageFor(m => m.Body)
-								@*<textarea class="form-control" rows="10" name="Body" placeholder="Message"></textarea>*@
-							</div>
-							<div class="form-group">
-
-								@*Do I add confirm statement for input of 7??? generate random numbers between 1-9  add if input equals sum then show submit button*@
-								@*<input type="text" class="form-control input-lg" id="humaninput" placeholder="5 + 2 =" name="human">*@
-							</div>
-							<div class="form-group">
-								@*@if ()*@ 
-								<button id="submit_btn" type="submit" class="btn btn-outline-white btn-big" value="Send"></button>
-							</div>
-						</form>
-					}
-				</div>
-
-			</div>
 		</div>
 	</section>
 	<!-- End of Contact Section -->
