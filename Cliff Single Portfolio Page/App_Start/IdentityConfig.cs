@@ -38,11 +38,12 @@ namespace Cliff_Single_Portfolio_Page
             var host = WebConfigurationManager.AppSettings["host"];
             int port = Convert.ToInt32(WebConfigurationManager.AppSettings["port"]);
 
-            var from = new MailAddress(WebConfigurationManager.AppSettings["emailfrom"], "BugTracker");
+            var from = new MailAddress(WebConfigurationManager.AppSettings["emailfrom"], "Cliff_Single_Portfolio_Page");
             //Email object set up
             var email = new MailMessage(from, new MailAddress(message.Destination))
             {
                 Subject = message.Subject,
+                //VisEmail = message.VisEmail,
                 Body = message.Body,
                 IsBodyHtml = true,
             };

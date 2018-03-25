@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using Cliff_Single_Portfolio_Page.Models;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,41 +13,46 @@ namespace Cliff_Single_Portfolio_Page.Controllers
     {
         public ActionResult Index()
         {
-             //Post Assign a ticket thru email notification
-    [HttpPost]
+            return View();
+        }
+
+        //GET: Email
+        public ActionResult Contact()
+        {
+            Email model = new Email();
+            return View(model);
+        }
+
+
+        //POST: Email
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Email()
+        public async Task<ActionResult> Contact(Email model)
         {
             try
             {
                 EmailService ems = new EmailService();
                 IdentityMessage msg = new IdentityMessage();
-                //User user = db.Users.Find(model.AssignedToUserId);
-                //User user = db.Users.Find(model.AssignedToUserId);
+                //Email vis = new Email();
 
-                msg.Body = "New Ticket Assignment." + Environment.NewLine + "Please click the following link to view the details " + "<a href=\"" + callbackUrl + "\">NEW TICKET</a>";
+                
+                msg.Body = model.FromName + Environment.NewLine + model.Body + Environment.NewLine + "Contact's email " + model.FromEmail;
 
-                msg.Destination = user.Email;
-                msg.Subject = "Assigned Ticket";
+
+
+                msg.Destination = "cgk3008.ck@gmail.com";
+                msg.Subject = "Portfolio message from " + model.FromName;
+
                 await ems.SendMailAsync(msg);
             }
             catch (Exception ex)
             {
                 await Task.FromResult(0);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Home");
         }
 
 
 
-
-            return View();
     }
-}
-
-   
-
-
-
-
 }

@@ -1,0 +1,55 @@
+﻿@model Cliff_Single_Portfolio_Page.Models.Email
+
+@{
+	ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary("", new { @class = "text-danger" })
+	@*@Html.Hidden(Model.Subject = "Portfolio Contact Email")*@
+	<div id="result"></div>
+
+	<form id="contact_form" class="contact-form" action="contact.php" method="post">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					@Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+
+					@Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+					@Html.ValidationMessageFor(m => m.FromName)
+					@*<input type="text" class="form-control input-lg" id="nameinput" placeholder="Name" name="FromName">*@
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					@Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+
+					@Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", placeholder = "example@email.com" })
+					@Html.ValidationMessageFor(m => m.FromEmail)
+					@*<input type="email" class="form-control input-lg" id="emailinput" placeholder="Email" name="VisEmail">*@
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+
+			@Html.TextBoxFor(m => m.Body, new { @class = "form-control" })
+			@Html.ValidationMessageFor(m => m.Body)
+			@*<textarea class="form-control" rows="10" name="Body" placeholder="Message"></textarea>*@
+		</div>
+		<div class="form-group">
+
+			@*Do I add confirm statement for input of 7??? generate random numbers between 1-9  add if input equals sum then show submit button*@
+			@*<input type="text" class="form-control input-lg" id="humaninput" placeholder="5 + 2 =" name="human">*@
+		</div>
+		<div class="form-group">
+			@*@if ()*@
+			<button id="submit_btn" type="submit" class="btn btn-outline-white btn-big" value="Send"></button>
+		</div>
+	</form>
+}
+

@@ -297,6 +297,8 @@
     <Content Include="Assets\HTML\img\quotation.png" />
     <Content Include="Assets\HTML\img\scroll-arrow.png" />
     <Content Include="private.config" />
+    <Content Include="Views\Email\SendEmail.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <Content Include="Assets\HTML\js\bootstrap.min.js" />
     <Content Include="Assets\HTML\js\grid.js" />
@@ -406,7 +408,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
