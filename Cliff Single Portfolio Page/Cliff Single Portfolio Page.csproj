@@ -258,13 +258,14 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Assets\HTML\assets\bugtracker-page-001.png" />
     <Content Include="Assets\HTML\assets\clients-img.jpg" />
     <Content Include="Assets\HTML\assets\cliff tux 2.jpg" />
     <Content Include="Assets\HTML\assets\CLIFFAWESOME-ADJUSTED1.png" />
     <Content Include="Assets\HTML\assets\CliffKoenigsquare12.jpg" />
     <Content Include="Assets\HTML\assets\CliffKoenigsquare1224.jpg" />
     <Content Include="Assets\HTML\assets\google.png" />
-    <Content Include="Assets\HTML\assets\imagebloglayout.png" />
+    <Content Include="Assets\HTML\assets\imagebloglayout-resized670-440.png" />
     <Content Include="Assets\HTML\assets\logo.png" />
     <Content Include="Assets\HTML\assets\paypal.png" />
     <Content Include="Assets\HTML\assets\post1.jpg" />
@@ -300,6 +301,7 @@
     <Content Include="private.config" />
     <Content Include="Views\Email\SendEmail.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\ComingSoon.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <Content Include="Assets\HTML\js\bootstrap.min.js" />
     <Content Include="Assets\HTML\js\grid.js" />

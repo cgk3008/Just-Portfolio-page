@@ -21,8 +21,12 @@ namespace Cliff_Single_Portfolio_Page.Controllers
         //{
         //    Email model = new Email();
         //    return View(model);
-        //}
+        //}
 
+        public ActionResult ComingSoon()
+        {
+            return View();
+        }
 
         //POST: Email
         [HttpPost]
