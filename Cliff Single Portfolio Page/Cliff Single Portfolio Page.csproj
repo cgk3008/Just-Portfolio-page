@@ -306,6 +306,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
     <None Include="Properties\PublishProfiles\CliffPortfolio - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\CliffsPortfolio - Web Deploy.pubxml" />
     <None Include="Views\Home\Index.cshtml" />
     <Content Include="Assets\HTML\js\bootstrap.min.js" />
     <Content Include="Assets\HTML\js\grid.js" />
