@@ -116,62 +116,67 @@
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					<li class="portfolio-item visible-item" data-id="add-ons graphics">
-						<a href="https://" data-largesrc="~/Assets/HTML/assets/imagebloglayout-resized670-440.png" data-category="Add-Ons Graphics" data-date="February 26, 2018" data-title="Personal Blog" data-description="The blog application and created the database using Code First Migrations with LINQ and Entity Framework. Additional technologies utilized include CK Editor and Syntax Highlighter. The CK Editor allows the administrator to display different fonts and color schemes. ">
+						<a>
+							@*<a href="https://" data-largesrc="~/Assets/HTML/assets/imagebloglayout-resized670-440.png" data-category="Add-Ons Graphics" data-date="February 26, 2018" data-title="Personal Blog" data-description="The blog application and created the database using Code First Migrations with LINQ and Entity Framework. Additional technologies utilized include CK Editor and Syntax Highlighter. The CK Editor allows the administrator to display different fonts and color schemes. ">*@
+							<h3>Blog Website</h3>
+							@*<p>Designed a blog website for posting brief thoughts, guidance or opinion pieces.</p>*@
 							<img src="~/Assets/HTML/assets/imagebloglayout-resized670-440.png" alt="Breath - Vintage Text Styles" />
-							<div class="overlay-content">
-								<h4>Blog Site</h4>
-								<p>Designed a blog website for posting brief thoughts, guidance or opinion pieces.</p>
-							</div>
-						</a>
+						</a><div class="overlay-content">
+							<h3>@*@Html.ActionLink()*@<a href="https://cliffportfolio.azurewebsites.net">See Blog Website</a></h3>
+						</div>
+
 					</li>
 					<li class="portfolio-item visible-item" data-id="graphics">
 						@*<a href="" data-largesrc="~/Assets/HTML/assets/bugtracker-page-001.png" data-category="Graphics" data-date="Coming Soon" data-title="Bug Tracker" data-description="<p>	Methodically designed and developed a multi-functional project/issue tracker web application, integrating enhanced roles, security and file uploading features. Employed SQL Server using Code First Relational database design.						</p><h4>Technologies used include:</h4><ul><li>.Net Framework v. 4.6.1</li><li>C# and MVC6</li><li>LINQ</li><li>SQL</li><li>Entity Framework</li><li>jQuery DataTables</li></ul> ">*@
-							<img src="~/Assets/HTML/assets/bugtracker-page-001.png" alt="Business Card Mockups - pack 2" />
-							<div class="overlay-content">
-								<h4>Bug Tracker</h4>
-								<p>To be added at a later date.</p>
-							</div>
-						@*</a>*@
-					</li>
-					@*<li class="portfolio-item visible-item" data-id="ui-design">
-						<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work3-big.jpg" data-category="UI Design" data-date="Apr 10th, 2014" data-title="Whitepixels UI v1.1" data-description="This is a great pack of premade graphics and web elements designed to help you create applications, great online services or websites. All elements are vector shapes so you can resize them without quality loss. The pack includes: buttons, knobs, forms, sliders, menu bar, switches, directional buttons, list selector, equalizer interface, timeline and a lot more. Every single element was designed with all my atention on details. I hope you'll like and recommend it.">
-							<img src="~/Assets/HTML/assets/work3-big.jpg" alt="Whitepixels UI v1.1" />
-							<div class="overlay-content">
-								<h4>Financial Planner</h4>
-								<p>To be added at a later date.</p>
-							</div>
-						</a>
-					</li>*@
-					@*<li class="portfolio-item visible-item" data-id="graphics">
-						<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work4-big.jpg" data-category="Graphics" data-date="Apr 10th, 2014" data-title="Hardcover Book Mockups - mega pack" data-description="<p>If you are a writer, web designer or graphic designer and you need to showcase a book in minutes, this is the product you need. With just few clicks, your Hardcover book is prepared to be shown to the world with style. You only need to paste your title and graphics and your book is ready.</p><p>This Book Mockups pack contains 15 well-made and well-organized PSD files with transparent background. So you can easily save your book as png file and insert it on your design. Every file includes the wood background but you can still add your own. The Hardcover Book Mockups are made in hi-res so you can use them even on print materials.</p>">
-							<img src="~/Assets/HTML/assets/work4-big.jpg" alt="Hardcover Book Mockups - mega pack" />
-							<div class="overlay-content">
-								<h4>Vehicle Infomration Finder in Xamarin</h4>
-								<p>To be added at a later date.</p>
-							</div>
-						</a>
-					</li>*@
-					@*<li class="portfolio-item visible-item" data-id="ui-design">
-						<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work5-big.jpg" data-category="UI Design" data-date="Apr 10th, 2014" data-title="CreamUI - mobile interface kit" data-description="<p>This is a great mobile UI pack designed to help you create applications for iPhone and iPad with Retina screen. You can modify all graphics and styles just as you want, and use any of included elements: buttons, knobs, sliders, image thumbnails, progress bars, shelfs, forms, checkboxes, call-to-action buttons, audio and video player, switches and a lot more...</p><p>Every single button of this mobile UI pack is designed in 2 versions: normal and pressed. Also all graphics are vector. It means that you can resize every single element without losing quality.</p>">
-							<img src="~/Assets/HTML/assets/work5-big.jpg" alt="CreamUI - mobile interface kit" />
-							<div class="overlay-content">
-								<h4>Stock Ticker App</h4>
-								<p>To be added at a later date.</p>
-							</div>
-						</a>
-					</li>*@
-					@*<li class="portfolio-item visible-item" data-id="web-design">
-							<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work6-big.jpg" data-category="Web Design" data-date="Apr 10th, 2014" data-title="PlanusWP - One Page Wordpress Theme" data-description="<p>PlanusWP is a responsive one-page Wordpress theme built on Twitter Bootstrap 3 framework. PlanusWP theme is ment to present you as a designer or creative professional to the world. Moreover, this theme can be adapted to any kind of creative agency. This theme was built using the latest features from Bootstrap 3 so it's responsive (mobile first), flat and very nice animated.</p><p>The home page is very customizable as you can reorder the section using drag-and-drop technique. Also you can customize any feature due to the powerful custom admin options.</p><p>PlanusWP is a nice and simple theme allows you to create content and bring attention to it. You don't need to worry about contact plugin, as the contact form is stand-alone. Just add your email adress and all is done.</p>">
-								<img src="~/Assets/HTML/assets/work6-big.jpg" alt="PlanusWP - One Page Wordpress Theme" />
-								<div class="overlay-content">
-									<h4>Placeholder</h4>
-									<p>To be added at a later date.</p>
-								</div>
-							</a>
-						</li>*@
+						<h3>Bug Tracker</h3>
+						@*<p>To be added at a later date.</p>*@
+						<img src="~/Assets/HTML/assets/bugtracker-page-001.png" @*alt="Business Card Mockups - pack 2"*@>
+						<div class="overlay-content" />
+						<h3>@Html.ActionLink("See Demo", "ComingSoon", "Home")</h3>
 				</ul>
 			</div>
+
+
+			@*</li>*@
+			@*<li class="portfolio-item visible-item" data-id="ui-design">
+					<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work3-big.jpg" data-category="UI Design" data-date="Apr 10th, 2014" data-title="Whitepixels UI v1.1" data-description="This is a great pack of premade graphics and web elements designed to help you create applications, great online services or websites. All elements are vector shapes so you can resize them without quality loss. The pack includes: buttons, knobs, forms, sliders, menu bar, switches, directional buttons, list selector, equalizer interface, timeline and a lot more. Every single element was designed with all my atention on details. I hope you'll like and recommend it.">
+						<img src="~/Assets/HTML/assets/work3-big.jpg" alt="Whitepixels UI v1.1" />
+						<div class="overlay-content">
+							<h4>Financial Planner</h4>
+							<p>To be added at a later date.</p>
+						</div>
+					</a>
+				</li>*@
+			@*<li class="portfolio-item visible-item" data-id="graphics">
+					<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work4-big.jpg" data-category="Graphics" data-date="Apr 10th, 2014" data-title="Hardcover Book Mockups - mega pack" data-description="<p>If you are a writer, web designer or graphic designer and you need to showcase a book in minutes, this is the product you need. With just few clicks, your Hardcover book is prepared to be shown to the world with style. You only need to paste your title and graphics and your book is ready.</p><p>This Book Mockups pack contains 15 well-made and well-organized PSD files with transparent background. So you can easily save your book as png file and insert it on your design. Every file includes the wood background but you can still add your own. The Hardcover Book Mockups are made in hi-res so you can use them even on print materials.</p>">
+						<img src="~/Assets/HTML/assets/work4-big.jpg" alt="Hardcover Book Mockups - mega pack" />
+						<div class="overlay-content">
+							<h4>Vehicle Infomration Finder in Xamarin</h4>
+							<p>To be added at a later date.</p>
+						</div>
+					</a>
+				</li>*@
+			@*<li class="portfolio-item visible-item" data-id="ui-design">
+					<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work5-big.jpg" data-category="UI Design" data-date="Apr 10th, 2014" data-title="CreamUI - mobile interface kit" data-description="<p>This is a great mobile UI pack designed to help you create applications for iPhone and iPad with Retina screen. You can modify all graphics and styles just as you want, and use any of included elements: buttons, knobs, sliders, image thumbnails, progress bars, shelfs, forms, checkboxes, call-to-action buttons, audio and video player, switches and a lot more...</p><p>Every single button of this mobile UI pack is designed in 2 versions: normal and pressed. Also all graphics are vector. It means that you can resize every single element without losing quality.</p>">
+						<img src="~/Assets/HTML/assets/work5-big.jpg" alt="CreamUI - mobile interface kit" />
+						<div class="overlay-content">
+							<h4>Stock Ticker App</h4>
+							<p>To be added at a later date.</p>
+						</div>
+					</a>
+				</li>*@
+			@*<li class="portfolio-item visible-item" data-id="web-design">
+					<a href="https://wrapbootstrap.com/user/stefusilviu" data-largesrc="~/Assets/HTML/assets/work6-big.jpg" data-category="Web Design" data-date="Apr 10th, 2014" data-title="PlanusWP - One Page Wordpress Theme" data-description="<p>PlanusWP is a responsive one-page Wordpress theme built on Twitter Bootstrap 3 framework. PlanusWP theme is ment to present you as a designer or creative professional to the world. Moreover, this theme can be adapted to any kind of creative agency. This theme was built using the latest features from Bootstrap 3 so it's responsive (mobile first), flat and very nice animated.</p><p>The home page is very customizable as you can reorder the section using drag-and-drop technique. Also you can customize any feature due to the powerful custom admin options.</p><p>PlanusWP is a nice and simple theme allows you to create content and bring attention to it. You don't need to worry about contact plugin, as the contact form is stand-alone. Just add your email adress and all is done.</p>">
+						<img src="~/Assets/HTML/assets/work6-big.jpg" alt="PlanusWP - One Page Wordpress Theme" />
+						<div class="overlay-content">
+							<h4>Placeholder</h4>
+							<p>To be added at a later date.</p>
+						</div>
+					</a>
+				</li>*@
+			<ul></ul>
 		</div>
+		@*</div>*@
 	</section>
 	<!-- End of Portfolio Section -->
 	<!-- Testimonials Section -->
@@ -239,26 +244,29 @@
 
 			<div class="row">
 				<div class="col-sm-4 post-col">
-					<figure><img src="~/Assets/HTML/assets/post1.jpg" alt=""></figure>
-					<h2>Lorem ipsum dolor</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellat hic deleniti dignissimos provident cupiditate quibusdam adipisci facere? Nobis, ducimus, ullam commodi inventore consequuntur adipisci quam cupiditate vel optio rerum.</p>
-					<a href="" class="btn read-more">Read More</a>
+					<figure><img src="~/Assets/HTML/assets/frustrated-960x540.png" alt=""></figure>
+					<h2>Mastering Frustration</h2>
+					<p>Learning to code can be quite frustrating at times.</p>
+					<a href="https://cliffportfolio.azurewebsites.net/CliffBlogPosts/Details/mastering-frustration" class="btn read-more">Read More</a>
 				</div>
 				<div class="col-sm-4 post-col">
-					<figure><img src="~/Assets/HTML/assets/post2.jpg" alt=""></figure>
-					<h2>This is a long blog post</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, molestias, repellat, animi, fugit aliquid fuga saepe nisi quasi debitis voluptate odit beatae atque tempora ad excepturi nemo velit obcaecati vitae.</p>
-					<a href="" class="btn read-more">Read More</a>
+					<figure><img src="~/Assets/HTML/assets/20171125_095816-bbbb-960x540.png" alt=""></figure>
+					<h2>Peru</h2>
+					<p>Always nice to get away!</p>
+					<a href="https://cliffportfolio.azurewebsites.net/CliffBlogPosts/Details/peru" class="btn read-more">Read More</a>
 				</div>
 				<div class="col-sm-4 post-col">
-					<figure><img src="~/Assets/HTML/assets/post3.jpg" alt=""></figure>
-					<h2>This is the title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, adipisci, doloremque dolore temporibus numquam ex aliquam ullam eum doloribus voluptatibus suscipit quaerat vel quis consectetur libero. Architecto.</p>
-					<a href="" class="btn read-more">Read More</a>
+					<figure><img src="~/Assets/HTML/assets/365728-636190610546181732-16x9-960x540.png" alt=""></figure>
+					<h2>Teamwork</h2>
+					<p>Software development requires teamwork.</p>
+					<a href="https://cliffportfolio.azurewebsites.net/CliffBlogPosts/Details/teamwork" class="btn read-more">Read More</a>
 				</div>
 			</div>
 
-			<a href="#" class="btn btn-outline btn-darkblue more-blog">See More Blog Posts</a>
+			<div class="text-center">
+				<a href="https://cliffportfolio.azurewebsites.net" class="btn btn-outline btn-darkblue more-blog">See Blog Posts</a>
+			</div>
+
 
 		</div>
 	</section>
@@ -473,7 +481,7 @@
 									<input type="submit" class="btn btn-outline-white btn-big" value="Send Email">
 								</div>
 							</form>
-							
+
 						}
 
 
@@ -506,9 +514,9 @@
 					</div>*@
 			</div>
 		</div>
-		</div>
+		@*</div>*@
 
-		</div>
+		@*</div>*@
 	</section>
 	<!-- End of Contact Section -->
 	<!-- Footer -->

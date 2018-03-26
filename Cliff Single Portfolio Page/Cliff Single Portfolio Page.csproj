@@ -258,12 +258,15 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Assets\HTML\assets\20171125_095816-bbbb-960x540.png" />
+    <Content Include="Assets\HTML\assets\365728-636190610546181732-16x9-960x540.png" />
     <Content Include="Assets\HTML\assets\bugtracker-page-001.png" />
     <Content Include="Assets\HTML\assets\clients-img.jpg" />
     <Content Include="Assets\HTML\assets\cliff tux 2.jpg" />
     <Content Include="Assets\HTML\assets\CLIFFAWESOME-ADJUSTED1.png" />
     <Content Include="Assets\HTML\assets\CliffKoenigsquare12.jpg" />
     <Content Include="Assets\HTML\assets\CliffKoenigsquare1224.jpg" />
+    <Content Include="Assets\HTML\assets\frustrated-960x540.png" />
     <Content Include="Assets\HTML\assets\google.png" />
     <Content Include="Assets\HTML\assets\imagebloglayout-resized670-440.png" />
     <Content Include="Assets\HTML\assets\logo.png" />
@@ -302,6 +305,7 @@
     <Content Include="Views\Email\SendEmail.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
+    <None Include="Properties\PublishProfiles\CliffPortfolio - Web Deploy.pubxml" />
     <None Include="Views\Home\Index.cshtml" />
     <Content Include="Assets\HTML\js\bootstrap.min.js" />
     <Content Include="Assets\HTML\js\grid.js" />

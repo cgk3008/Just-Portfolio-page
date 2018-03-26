@@ -49,7 +49,7 @@ namespace Cliff_Single_Portfolio_Page.Controllers
 
                 await ems.SendMailAsync(msg);
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
                 await Task.FromResult(0);
             }

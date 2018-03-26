@@ -63,7 +63,7 @@ namespace Cliff_Single_Portfolio_Page
                     await smtp.SendMailAsync(email);
                     return true;
                 }
-                catch (Exception e)
+                catch (Exception /*e*/)
                 {
                     //Console.WriteLine(e.Message);
                     return false;
