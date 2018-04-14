@@ -261,6 +261,8 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Assets\C__fakepath_cliffreduced size.png" />
+    <Content Include="Assets\C__fakepath_cliffreduced_size_60.png" />
     <Content Include="Assets\HTML\assets\20171125_095816-bbbb-960x540.png" />
     <Content Include="Assets\HTML\assets\365728-636190610546181732-16x9-960x540.png" />
     <Content Include="Assets\HTML\assets\bugtracker-page-001.png" />
@@ -304,6 +306,7 @@
     <Content Include="Assets\HTML\img\navbar-bg.png" />
     <Content Include="Assets\HTML\img\quotation.png" />
     <Content Include="Assets\HTML\img\scroll-arrow.png" />
+    <Content Include="Assets\Webp.net-resizeimage.png" />
     <Content Include="private.config" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
     <Content Include="Web.config">
