@@ -415,7 +415,7 @@ a:hover {
    Welcome Section
    ========================================================================== */
 .welcome-section {
-	background-image: url('../assets/CLIFFAWESOME-ADJUSTED1.png');
+	background-image: url('../assets/CLIFFAWESOME-ADJUSTED1.jpg');
 	background-attachment: scroll;
 	height: auto;
 	width: 100%;
@@ -1862,7 +1862,7 @@ a:hover {
 	min-width: 100%;
 	text-align: center;
 	padding: 60px 0;
-	background-image: url(../assets/CLIFFAWESOME-ADJUSTED1.png);
+	background-image: url(../assets/CLIFFAWESOME-ADJUSTED1.jpg);
 	position: relative;
 	z-index: 0;
 }
